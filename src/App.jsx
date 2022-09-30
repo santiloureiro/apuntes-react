@@ -4,7 +4,6 @@ import { useState } from 'react'
 import FunctionState from './components/clase-04'
 import Clase05 from './components/clase-05'
 import Clase06 from './components/clase-06'
-
 import './index.css'
 import NavBar from './components/NavBar'
 
