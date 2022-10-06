@@ -15,12 +15,10 @@ import { NavLink, useParams } from "react-router-dom"
 
 
 
-const Clase06 = ({items}) => {
+const Clase06 = () => {
     
     const [state, setState] = useState([])
     const [loading, setLoading] = useState(true)
-
-    const id = useParams();
     
     useEffect(() => {
         const res = fetch("https://rickandmortyapi.com/api/character")
@@ -50,6 +48,7 @@ const Clase06 = ({items}) => {
                 <h5 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{char.name}</h5>
                 <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">{char.species}</p>
                 <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">{dot}{char.status}</p>
+                <NavLink to={`/item/${char.id}`}><button className="bg-indigo-600 text-white font-semibold text-sm my-5 px-24 py-2 rounded-sm mx-3 border-indigo-600 border transition-all hover:bg-white hover:text-indigo-600">See More!</button></NavLink>
                 </div>
                 )})}
                 </div>

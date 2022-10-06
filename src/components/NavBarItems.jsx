@@ -9,6 +9,7 @@ const randomN = Math.ceil(Math.random()*20)
                 <li><Link to={"/"}><span className="mx-2 px-3 py-1 rounded-lg text-black font-semibold transition-all hover:bg-black hover:text-white">Clase 04</span></Link></li>
                 <li><Link to={"/clase-05"}><span className="mx-2 px-3 py-1 rounded-lg text-black font-semibold transition-all hover:bg-black hover:text-white">Clase 05</span></Link></li>
                 <li><Link to={"/clase-06"}><span className="mx-2 px-3 py-1 rounded-lg text-black font-semibold transition-all hover:bg-black hover:text-white">Clase 06</span></Link></li>
+                <li><Link to={"/clase-09"}><span className="mx-2 px-3 py-1 rounded-lg text-black font-semibold transition-all hover:bg-black hover:text-white">Clase 09</span></Link></li>
                 </ul>
         </div>
     )
